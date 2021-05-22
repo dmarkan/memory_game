@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8e5e5;
+}
+
+.wrapper,
+.hide {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: 200px 200px 200px;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box_1,
+.box_2,
+.box_3,
+.box_4,
+.box_5,
+.box_6,
+.box_7,
+.box_8,
+.box_9,
+.box_10,
+.box_11,
+.box_12,
+.back_1,
+.back_2,
+.back_3,
+.back_4,
+.back_5,
+.back_6,
+.back_7,
+.back_8,
+.back_9,
+.back_10,
+.back_11,
+.back_12 {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.box_1,
+.box_8 {
+  background-color: chocolate;
+}
+
+.box_4,
+.box_3 {
+  background-color: darkblue;
+}
+
+.box_2,
+.box_7 {
+  background-color: darkmagenta;
+}
+
+.box_5,
+.box_6 {
+  background-color: darkslategrey;
+}
+
+.box_9,
+.box_11 {
+  background-color: forestgreen;
+}
+
+.box_10,
+.box_12 {
+  background-color: gold;
+}
+
+.back_1,
+.back_2,
+.back_3,
+.back_4,
+.back_5,
+.back_6,
+.back_7,
+.back_8,
+.back_9,
+.back_10,
+.back_11,
+.back_12 {
+  background-color: brown;
+  z-index: 100;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (orientation:portrait) {
+
+  .wrapper,
+  .hide {
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: 80px 80px 80px;
+  }
+
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4,
+  .box_5,
+  .box_6,
+  .box_7,
+  .box_8,
+  .box_9,
+  .box_10,
+  .box_11,
+  .box_12,
+  .back_1,
+  .back_2,
+  .back_3,
+  .back_4,
+  .back_5,
+  .back_6,
+  .back_7,
+  .back_8,
+  .back_9,
+  .back_10,
+  .back_11,
+  .back_12 {
+    padding: 5px;
+  }
+}
+
+@media (orientation:landscape) and (max-width: 1000px) {
+
+  .wrapper,
+  .hide {
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 100px 100px 100px;
+  }
+
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4,
+  .box_5,
+  .box_6,
+  .box_7,
+  .box_8,
+  .box_9,
+  .box_10,
+  .box_11,
+  .box_12,
+  .back_1,
+  .back_2,
+  .back_3,
+  .back_4,
+  .back_5,
+  .back_6,
+  .back_7,
+  .back_8,
+  .back_9,
+  .back_10,
+  .back_11,
+  .back_12 {
+    padding: 5px;
+  }
+}
